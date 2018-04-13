@@ -32,6 +32,16 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        if(null == savedInstanceState) {
+            //set Main Content
+            dasboard dasb = new dasboard();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.flContent,dasb).commit();
+
+            toolbar.setTitle(R.string.menu_dasboard);
+            navigationView.setCheckedItem(R.id.nav_dasbord);
+        }
     }
 
     @Override
@@ -76,25 +86,25 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_dasbord) {
             dasboard dsbord = new dasboard();
-            ft.replace(R.id.flContent,dsbord);
+            ft.replace(R.id.flContent,dsbord).commit();
             toolbar.setTitle(R.string.menu_dasboard);
         } else if (id == R.id.nav_toko) {
             DataToko fdatok = new DataToko();
-            ft.replace(R.id.flContent,fdatok);
+            ft.replace(R.id.flContent,fdatok).commit();
         } else if (id == R.id.nav_barang) {
             Data_Barang fdabar = new Data_Barang();
-            ft.replace(R.id.flContent,fdabar);
+            ft.replace(R.id.flContent,fdabar).commit();
         } else if (id == R.id.nav_pegawai) {
             data_karyawan fdakar = new data_karyawan();
-            ft.replace(R.id.flContent,fdakar);
+            ft.replace(R.id.flContent,fdakar).commit();
         }
           else if (id == R.id.nav_laporan) {
             laporan flaporan = new laporan();
-            ft.replace(R.id.flContent,flaporan);
+            ft.replace(R.id.flContent,flaporan).commit();
         }
           else if (id == R.id.nav_Transaksi) {
             transaksi ftransaksi = new transaksi();
-            ft.replace(R.id.flContent,ftransaksi);
+            ft.replace(R.id.flContent,ftransaksi).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
