@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1" >
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Data Toko"
+            android:layout_weight="1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Data Barang"
+            android:layout_weight="1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Data Pegawai"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1" >
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Laporan"
+            android:layout_weight="1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="Transaksi"
+            android:layout_weight="1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="--"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
