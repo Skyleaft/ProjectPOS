@@ -22,13 +22,8 @@ import butterknife.ButterKnife;
  */
 public class dasboard extends Fragment {
 
-    @BindView(R.id.btn_toko) Button bt_toko;
-    @BindView(R.id.btn_barang) Button bt_barang;
-    @BindView(R.id.btn_pegawai) Button bt_pegawai;
-    @BindView(R.id.btn_transaksi) Button bt_transaksi;
-    @BindView(R.id.btn_laporan) Button bt_laporan;
 
-    Button toko;
+    Button btntoko;
 
 
     public dasboard() {
@@ -41,13 +36,12 @@ public class dasboard extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_dasboard, container, false);
-        final LinearLayout rootlayout = (LinearLayout) v.findViewById(R.id.linearLayout);
-        toko = v.findViewById(R.id.btn_toko);
+        btntoko = v.findViewById(R.id.btn_toko);
 
         final Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
         final NavigationView navigationView = (NavigationView) getActivity().findViewById(R.id.nav_view);
 
-        toko.setOnClickListener(new View.OnClickListener() {
+        btntoko.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 DataToko datok = new DataToko();
