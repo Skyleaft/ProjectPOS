@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="50dp"
@@ -15,6 +16,7 @@
         android:layout_weight="1" >
 
         <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_toko"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
@@ -25,6 +27,7 @@
             android:layout_weight="1" />
 
         <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_barang"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
@@ -35,6 +38,7 @@
             android:layout_weight="1" />
 
         <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_pegawai"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
@@ -56,6 +60,7 @@
         android:layout_weight="1" >
 
         <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_laporan"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"
@@ -66,6 +71,7 @@
             android:layout_weight="1" />
 
         <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_transaksi"
             android:layout_width="0dip"
             android:layout_height="match_parent"
             android:layout_marginLeft="5dp"

@@ -91,20 +91,25 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_toko) {
             DataToko fdatok = new DataToko();
             ft.replace(R.id.flContent,fdatok).commit();
+            toolbar.setTitle(R.string.menu_datatoko);
         } else if (id == R.id.nav_barang) {
             Data_Barang fdabar = new Data_Barang();
             ft.replace(R.id.flContent,fdabar).commit();
+            toolbar.setTitle(R.string.menu_databarang);
         } else if (id == R.id.nav_pegawai) {
             data_karyawan fdakar = new data_karyawan();
             ft.replace(R.id.flContent,fdakar).commit();
+            toolbar.setTitle(R.string.menu_datakaryawan);
         }
           else if (id == R.id.nav_laporan) {
             laporan flaporan = new laporan();
             ft.replace(R.id.flContent,flaporan).commit();
+            toolbar.setTitle(R.string.menu_laporan);
         }
           else if (id == R.id.nav_Transaksi) {
             transaksi ftransaksi = new transaksi();
             ft.replace(R.id.flContent,ftransaksi).commit();
+            toolbar.setTitle(R.string.menu_transaksi);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
