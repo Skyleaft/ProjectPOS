@@ -6,6 +6,13 @@
 
     <string name="action_settings">Settings</string>
 
+    <string name="menu_dasboard">Dasboard</string>
+    <string name="menu_daerah">Data Daerah</string>
+    <string name="menu_sekolah">Data Sekolah</string>
+    <string name="menu_guru">Data Guru</string>
+    <string name="menu_siswa">Data Siswa</string>
+    <string name="menu_cari">Pencarian Sekolah</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

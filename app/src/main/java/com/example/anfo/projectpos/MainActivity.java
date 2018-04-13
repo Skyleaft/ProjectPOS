@@ -71,26 +71,30 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        if (id == R.id.nav_dasbord) {
 
+        if (id == R.id.nav_dasbord) {
+            dasboard dsbord = new dasboard();
+            ft.replace(R.id.flContent,dsbord);
+            toolbar.setTitle(R.string.menu_dasboard);
         } else if (id == R.id.nav_toko) {
             DataToko fdatok = new DataToko();
-            ft.replace(R.id.flcontent,fdatok);
+            ft.replace(R.id.flContent,fdatok);
         } else if (id == R.id.nav_barang) {
             Data_Barang fdabar = new Data_Barang();
-            ft.replace(R.id.flcontent,fdabar);
+            ft.replace(R.id.flContent,fdabar);
         } else if (id == R.id.nav_pegawai) {
             data_karyawan fdakar = new data_karyawan();
-            ft.replace(R.id.flcontent,fdakar);
+            ft.replace(R.id.flContent,fdakar);
         }
           else if (id == R.id.nav_laporan) {
             laporan flaporan = new laporan();
-            ft.replace(R.id.flcontent,flaporan);
+            ft.replace(R.id.flContent,flaporan);
         }
           else if (id == R.id.nav_Transaksi) {
             transaksi ftransaksi = new transaksi();
-            ft.replace(R.id.flcontent,ftransaksi);
+            ft.replace(R.id.flContent,ftransaksi);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
