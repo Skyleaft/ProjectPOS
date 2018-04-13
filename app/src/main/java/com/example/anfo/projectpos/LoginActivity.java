@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
                 String hak,iduser;
 
                 ProgressDialog progressDialog = new ProgressDialog(LoginActivity.this,
-                        R.style.AppTheme_Dark_Dialog);
+                R.style.AppTheme_Dark_Dialog);
                 progressDialog.setTitle("Memproses...");
                 progressDialog.setIndeterminate(true);
                 progressDialog.setMessage("Harap Tunggu...");
