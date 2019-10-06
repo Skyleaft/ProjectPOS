@@ -48,8 +48,9 @@ public class LoginActivity extends AppCompatActivity {
                 _loginButton.setEnabled(false);
                 progressDialog.show();
 
-
-                if(_unameText.getText().toString().equals("") || _passwordText.getText().toString().equals("")){
+                String username = _unameText.getText().toString();
+                String password = _passwordText.getText().toString();
+                if(username.equals("") || password.equals("")){
                     _loginButton.setEnabled(true);
                     progressDialog.dismiss();
                     AlertDialog alertDialog = new AlertDialog.Builder(LoginActivity.this).create();
@@ -68,7 +69,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     k.konek();
                     if(k.con==null){
-                        if(_unameText.getText().toString().equals("admin") && _passwordText.getText().toString().equals("admin")){
+                        if(username.equals("admin") && password.equals("admin")){
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }else{
                             Toast.makeText(getApplicationContext(),"Gagal koneksi ke server",Toast.LENGTH_SHORT).show();
@@ -78,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
                         progressDialog.dismiss();
                     }
                     else{
-                        k.sql="select * from akun where username = '"+_unameText.getText().toString()+"' and password = '"+_passwordText.getText().toString()+"'";
+                        k.sql="select * from akun where username = '"+username+"' and password = '"+password+"'";
                         k.ambil();
                         try {
                             if(k.rs.next()){
